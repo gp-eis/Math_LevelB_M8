@@ -2568,7 +2568,7 @@ function makeBKit(pfx){
   const $=id=>document.getElementById(pfx+'_'+id);
   const STAR='M12 2l3 6.3 6.9.9-5 4.8 1.2 6.9L12 18.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z';
   const K={ $, STAR, runSeq:0, SFX:{}, sayNode:null, cheerNode:null, fwSound:null, timers:[] };
-  // Bump VOICEV whenever any https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/voice/*.mp3 is re-recorded. Without it a browser
+  // Bump VOICEV whenever any https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/sfx/mouse_click.mp3 is re-recorded. Without it a browser
   // that cached the old take plays the old wording under the new on-screen sentence,
   // which is exactly the mismatch this rule exists to prevent.
   const VOICEV='7';
@@ -4263,23 +4263,23 @@ window.Hub = {
   // Every week has its OWN videos, thumbnails and titles — nothing is shared across weeks.
   videosByWeek:{
     1:{
-      'concept':{title:'B-7 · Week 1 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w1_concept.mp4?v=2', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w1_concept.png?v=9'},
-      'poem':   {title:'B-7 · Week 1 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w1_literature.mp4?v=10', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w1_literature.png?v=9'}
+      'concept':{title:'B-7 · Week 1 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=2', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w1_concept.png?v=9'},
+      'poem':   {title:'B-7 · Week 1 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=10', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w1_literature.png?v=9'}
     },
     2:{
-      'concept':{title:'B-7 · Week 2 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w2_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w2_concept.png?v=9'},
-      'poem':   {title:'B-7 · Week 2 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w2_literature.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w2_literature.png?v=9'}
+      'concept':{title:'B-7 · Week 2 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w2_concept.png?v=9'},
+      'poem':   {title:'B-7 · Week 2 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w2_literature.png?v=9'}
     },
     3:{
-      'concept':{title:'B-7 · Week 3 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w3_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w3_concept.png?v=1'},
-      'poem':   {title:'B-7 · Week 3 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w3_literature.mp4?v=3', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w3_literature.png?v=9'}
+      'concept':{title:'B-7 · Week 3 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w3_concept.png?v=1'},
+      'poem':   {title:'B-7 · Week 3 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=3', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w3_literature.png?v=9'}
     },
     // Week 4's videos are not made yet -- both are held with `pending` below. The thumbs
     // point at week-3's files only so nothing 404s on the (disabled) cards; swap them and
     // the srcs to real b7w4 files when the concept + literature videos land.
     4:{
-      'concept':{title:'B-7 · Week 4 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w4_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w4_concept.png?v=9'},
-      'poem':   {title:'B-7 · Week 4 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/b7w4_literature.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w4_literature.png?v=9'}
+      'concept':{title:'B-7 · Week 4 · Concept', src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w4_concept.png?v=9'},
+      'poem':   {title:'B-7 · Week 4 · Math Literature',     src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/m8_w1_concept.mp4?v=1', thumb:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/math-m8/level-b/assets/videos/thumbs/b7w4_literature.png?v=9'}
     }
   },
   get videos(){ return this.videosByWeek[this.week] || this.videosByWeek[1]; },
